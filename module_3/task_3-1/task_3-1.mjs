@@ -5,17 +5,18 @@ initPrintOut(document.getElementById("txtOut"));
 printOut("--- Part 1, 2, 3 ----------------------------------------------------------------------------------------");
 /* Put your code below here!*/
 printOut("Task 1, 2 and 3");
-let wakeUpTime = 6;
+let wakeUpTime = 2;
 
-printOut("Wake up time = " +  wakeUpTime.toString());
+if(wakeUpTime == 2)
 
-if (wakeUpTime <= 7)  {
-  printOut("I can take the bus to school."); 
-} else if (wakeUpTime <= 8) {
-  printOut("I can take the train to school");
-} else  {
-  printOut("I have to take the car to school");
-}
+
+  
+
+ 
+  
+    
+  
+
 printOut(newLine);
 
 printOut("--- Part 4, 5 --------------------------------------------------------------------------------------------");
@@ -35,19 +36,13 @@ printOut(newLine);
 
 printOut("--- Part 6 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-const randomInt = (min, max) => {
-  min = Math.ceil(1)
-  max = Math.floor(8)
-
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-const submittedFile = randomInt(1,8);
-printOut("Submitted File Size: " + submittedFile.toString())
-
-if (submittedFile >=4) {
-  printOut("Thank You");
-} else {
-  printOut("The image is too small")
+const fileMin = 4;
+const fileSize = math.ceil(Math.random() * 8);
+printOut("The image size is: " + fileSize + "MP.");
+if (fileSize >= fileMin) {
+  printOut("Thank you");
+}else {
+  printOut("The image is too small");
 }
 
 
@@ -55,10 +50,11 @@ printOut(newLine);
 
 printOut("--- Part 7 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Submitted File Size: " + submittedFile.toString());
-if (submittedFile >=6) {
+printOut("Submitted File Size: " + fileSize.toString());
+const fileMax = 6
+if (fileSize >= fileMax) {
   printOut("Image is too large");
-} else if (submittedFile >=4) {
+} else if (fileSize >= fileMin) {
 printOut("Thank you")
 } else {
   printOut("The image is too small")

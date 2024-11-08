@@ -4,11 +4,31 @@ initPrintOut(document.getElementById("txtOut"));
 
 printOut("--- Part 1 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+function norDate() {
+    const dateToday = new Date();
+    const optionList = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+    };
+    printOut(dateToday.toLocaleDateString("no-NB", optionList));
+
+}
+
+norDate()
+
+
+
+/*husk å fiks call tolocaledatestring*/
+
+printOut("");
 printOut(newLine);
 
 printOut("--- Part 2 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
+
+
 printOut("Replace this with you answer!");
 printOut(newLine);
 

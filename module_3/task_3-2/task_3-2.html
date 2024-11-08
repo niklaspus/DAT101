@@ -10,8 +10,35 @@
       <span id="txtOut" style="white-space: nowrap"></span>
     </div>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+      <li>[n part 1, is it possible to solve the problem using a single "for" loop?]</li>
+
+      <p>[Ja, man kan lage en for løkke som teller opp og ned samtidig. Jeg gjorde det i løsningen min.
+        man bruker 2 variabler i for loopen som regner ut to verdier samtidig]</p>
+
+      <li>[In part 2, can we create what is known as an "infinite" loop within the condition of the "while" loop?
+        Describe what would or would not be necessary to achieve this. Provide a thorough explanation of
+        your answer.]</li>
+
+      <p>[Ja, hvis min guessnum og answernum var true, ville det blitt en endless loop. f.eks hvis jeg satt answernum !== guessnum
+        dette ville gjort at boolean valuen hadde vært true og gitt endless loop ]</p>
+
+      <li>[Discuss briefly how quickly or slowly a computer might be able to compute this, considering the
+        number of guesses and the time it takes. How does the program behave while it is guessing? Can
+        the program perform other tasks concurrently?]</li>
+
+      <p>[Jo mer rekkevide tall datamaskinen har å gjette, hvor lengre latency er det fra datamaskinens regning.
+        guessNum = Math.ceil(Math.random() * 1000000); tar lengre tid å gjette enn om det var * 100. 
+        Datamaskinen kan execute andre tasks samtidig, men det vil bli mer krevende jo større kode eller rekkevide på f.eks tall som skal bli gjettet. ]</p>
+
+      <li>[Explain the relationship between rows and columns in nested "for" loops. Can we, for instance,
+        change the order, considering rows to be innermost or columns to be innermost, or does this not
+        matter?]</li>
+
+      <p>[rows er den ytre delen av for loopen, mens columns er den indre delen. ytterst blir koden blir lest rad for rad 
+       og innerst lest hver column inni rowen. Hva som er innerst eller ytterst har noe og si  ved tanke på performance.
+       min løsning på part 1 er kanskje mer krevende for datamaskinen, jeg kunne heller lagd to for loops, men det gir
+        samme resultat
+       ]</p>
     </ol>
     <script type="module" src="./task_3-2.mjs" defer></script>
   </body>

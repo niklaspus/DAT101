@@ -4,10 +4,7 @@ initPrintOut(document.getElementById("txtOut"));
 
 printOut("--- Part 1 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
- const accountType = { Normal: "Brukskonto", Saving: "Sparekonto", Credit: "Kreditkonto" , Pension: "Pensionkonto" };
- const TAccount = 
-printOut(accountType.Normal + ", " + accountType.Saving + ", " + accountType.Credit + ", " + accountType.Pension);
-
+ 
 printOut(newLine);
 
 printOut("--- Part 2 ----------------------------------------------------------------------------------------------");
